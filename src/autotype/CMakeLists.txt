@@ -9,6 +9,10 @@ if(Q_WS_X11)
   endif()
 endif()
 
+if(Q_WS_WIN32)
+  add_subdirectory(win32)
+endif()
+
 if(WITH_TESTS)
   add_subdirectory(test)
 endif()
